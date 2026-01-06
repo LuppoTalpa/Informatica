@@ -1,6 +1,9 @@
 # Ignora tutto
 **/*
 
+# Formati per Flowgorithm
+!**/*.fprg
+
 # Formati per il c++
 !**/*.cpp
 !**/*.hpp

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="[FGR8]Esercizio-Operazioni tra 10 numeri"/>
+        <attribute name="authors" value="VGit"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-08 05:50:11 "/>
+        <attribute name="created" value="VkdpdDtERVNLVE9QLVZINERJMlA7MjAyNC0xMC0wODsiMDU6MDc6NTkgIjsyNjQw"/>
+        <attribute name="edited" value="VkdpdDtERVNLVE9QLVZINERJMlA7MjAyNC0xMC0wODsiMDU6NTA6MTEgIjsyOzI3MzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Dati dieci numeri in ingresso, calcolare la somma di quelli di posto dispari (il 1&#186; pi&#249; il 3&#186; pi&#249; il 5&#186;, ecc.) e la somma di quelli di posto pari (il 2&#186; pi&#249; il 4&#186; pi&#249; il 6&#186;, ecc.). Calcolare poi la differenza tra le due &#13;&#10;somme e mandare in uscita, dei dieci numeri, solo quelli che non superano tale differenza"/>
+            <declare name="i, j" type="Integer" array="False" size=""/>
+            <declare name="sommaPari, sommaDispari, differenza" type="Real" array="False" size=""/>
+            <declare name="numero" type="Integer" array="True" size="10"/>
+            <assign variable="sommaPari" expression="0"/>
+            <assign variable="sommaDispari" expression="0"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;Inserisci il &quot;&amp;i+1&amp;&quot;&#176; numero&quot;" newline="True"/>
+                <input variable="numero[i]"/>
+                <if expression="(i)%2 == 0">
+                    <then>
+                        <assign variable="sommaPari" expression="sommaPari+numero[i]"/>
+                    </then>
+                    <else>
+                        <assign variable="sommaDispari" expression="sommaDispari+numero[i]"/>
+                    </else>
+                </if>
+            </for>
+            <if expression="sommaDispari &gt; sommaPari">
+                <then>
+                    <assign variable="differenza" expression="sommaDispari-sommaPari"/>
+                </then>
+                <else>
+                    <assign variable="differenza" expression="sommaPari-sommaDispari"/>
+                </else>
+            </if>
+            <output expression="&quot;La differenza &#232; di: &quot;&amp;differenza&amp;&quot;.&quot;" newline="True"/>
+            <for variable="j" start="0" end="9" direction="inc" step="1">
+                <if expression="numero[j] &gt; differenza">
+                    <then/>
+                    <else>
+                        <output expression="&quot;Il &quot;&amp;j+1&amp;&quot;&#176; numero &#232; minore della differenza e corrisponde a &quot;&amp;numero[j]&amp;&quot;.&quot;" newline="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

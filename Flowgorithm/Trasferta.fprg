@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Esercizio-Trasferta"/>
+        <attribute name="authors" value="VGit"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-27 05:46:24 "/>
+        <attribute name="created" value="VkdpdDtERVNLVE9QLVZINERJMlA7MjAyNC0wOS0yNjsiMDg6NDI6MTcgIjsyNjQ0"/>
+        <attribute name="edited" value="VkdpdDtERVNLVE9QLVZINERJMlA7MjAyNC0wOS0yNzsiMDU6MTk6MjcgIjszO3VzZXI7REVTS1RPUC1CU00zREFIOzIwMjQtMDktMjY7IjA1OjI4OjAzICI7ZXNlcmNpemlvX21hY2NoaW5lWzFdLmZwcmc7ODE4Nw=="/>
+        <attribute name="edited" value="VkdpdDtERVNLVE9QLVZINERJMlA7MjAyNC0wOS0yNzsiMDU6NDY6MjQgIjsyOzI3NTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Si organizza un viaggio per assistere ad una partita di calcio in trasferta. Si decide di utilizzare le&#13;&#10;autovetture private. Calcolare il n. di autovetture che sono necessarie considerando una capienza di 5&#13;&#10;posti ciascuna. Calcolare inoltre il n. di posti che rimangono vuoti. Al fine di rimborsare i proprietari&#13;&#10;delle auto calcolare il costo complessivo del carburante (n. km tot, costo carburante al litro, consumo&#13;&#10;medio) e dividerlo per il numero dei passeggeri (i proprietari non pagano). Considerare il caso in cui&#13;&#10;siano utilizzato sia auto Diesel che a benzina."/>
+            <declare name="numeroPersone, numeroAuto, postiVuoti, costoBenzina, costoDisel, numeroKilometri" type="Integer" array="False" size=""/>
+            <declare name="pagamentoTotaleDisel, pagamentoTotaleBenzina, pagamentoPersonaDisel, pagamentoPersonaBenzina, consumoMedioDisel, consumoMedioBenzina" type="Real" array="False" size=""/>
+            <output expression="&quot;Quante persone partecipano alla trasferta ?&quot;" newline="True"/>
+            <input variable="numeroPersone"/>
+            <assign variable="numeroAuto" expression="(numeroPersone+4)/5"/>
+            <assign variable="postiVuoti" expression="(numeroAuto*5)-numeroPersone"/>
+            <output expression="&quot;quindi ci serviranno &quot;&amp;numeroAuto&amp;&quot; macchine ma rimarrano &quot;&amp;postiVuoti&amp;&quot; posti vuoti&quot;" newline="True"/>
+            <output expression="&quot;quanti kilometri dobbiamo percorrere&quot;" newline="True"/>
+            <input variable="numeroKilometri"/>
+            <output expression="&quot;quanto viene il disel?&quot;" newline="True"/>
+            <input variable="costoDisel"/>
+            <output expression="&quot;quanto viene la benzina?&quot;" newline="True"/>
+            <input variable="costoBenzina"/>
+            <assign variable="consumoMedioDisel" expression="12.5"/>
+            <assign variable="consumoMedioBenzina" expression="10"/>
+            <assign variable="pagamentoTotaleDisel" expression="numeroAuto*(costoDisel*(numeroKilometri/consumoMedioDisel))"/>
+            <assign variable="pagamentoTotaleBenzina" expression="numeroAuto*(costoBenzina*(numeroKilometri/consumoMedioBenzina))"/>
+            <assign variable="pagamentoPersonaDisel" expression="pagamentoTotaleDisel/(numeroPersone-numeroAuto)"/>
+            <assign variable="pagamentoPersonaBenzina" expression="pagamentoTotaleBenzina/(numeroPersone-numeroAuto)"/>
+            <output expression="&quot;Nel caso in cui usiate le auto disel ci dovete &quot;&amp;pagamentoPersonaDisel&amp;&quot;&#8364; a testa con un consumo medio di &quot;&amp;consumoMedioDisel&amp;&quot;.&quot;" newline="True"/>
+            <output expression="&quot;Invece nel caso in cui usiate le auto a benzina ci dovete &quot;&amp;pagamentoPersonaBenzina&amp;&quot;&#8364; a testa con un consumo medio di &quot;&amp;consumoMedioBenzina&amp;&quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

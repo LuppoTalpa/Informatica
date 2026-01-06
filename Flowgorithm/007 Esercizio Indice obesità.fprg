@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="[FGR7]Esercizio-Indice obesit&#224;"/>
+        <attribute name="authors" value="VGit"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-07 05:16:09 "/>
+        <attribute name="created" value="VkdpdDtERVNLVE9QLVZINERJMlA7MjAyNC0xMC0wNzsiMDQ6NTk6MzAgIjsyNjM0"/>
+        <attribute name="edited" value="VkdpdDtERVNLVE9QLVZINERJMlA7MjAyNC0xMC0wNzsiMDU6MTY6MDkgIjsxOzI3NDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Date N persone, di ciascuna sono dati il peso e l'altezza. Calcolare per ognuna l'indice di obesit&#224; = peso diviso l'altezza.&#13;&#10;&#13;&#10;Si conti man mano il numero di quelle che hanno obesit&#224; maggiore di un valore K prefissato."/>
+            <declare name="i, numeroPersone, numeroObesi" type="Integer" array="False" size=""/>
+            <declare name="peso, altezza, indiceObesit&#224;, K" type="Real" array="False" size=""/>
+            <output expression="&quot;Scrivi quante persone eseguono la prova&quot;" newline="True"/>
+            <input variable="numeroPersone"/>
+            <assign variable="K" expression="30"/>
+            <assign variable="numeroObesi" expression="0"/>
+            <for variable="i" start="0" end="numeroPersone-1" direction="inc" step="1">
+                <assign variable="indiceObesit&#224;" expression="0"/>
+                <output expression="&quot;Inserisci il peso del &quot;&amp;i+1&amp;&quot;&#176; indiviuduo (kg)&quot;" newline="True"/>
+                <input variable="peso"/>
+                <output expression="peso" newline="True"/>
+                <output expression="&quot;Inserisci l'altezza del &quot;&amp;i+1&amp;&quot;&#176; indiviuduo (cm)&quot;" newline="True"/>
+                <input variable="altezza"/>
+                <output expression="altezza" newline="True"/>
+                <assign variable="indiceObesit&#224;" expression="peso/((altezza/100)^2)"/>
+                <output expression="indiceObesit&#224;" newline="True"/>
+                <if expression="indiceObesit&#224; &gt; K">
+                    <then>
+                        <assign variable="numeroObesi" expression="numeroObesi+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Il numero di obesi che hanno partecipato &#232; pari a: &quot;&amp;numeroObesi&amp;&quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

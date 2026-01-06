@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="citt&#224; pi&#249; calda e fredda"/>
+        <attribute name="authors" value="Windows 10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-10 11:39:14 "/>
+        <attribute name="created" value="V2luZG93cyAxMDtERVNLVE9QLUE4UEdOSEo7MjAyNC0xMC0xMDsiMDg6NTE6NTMgIjszMTQy"/>
+        <attribute name="edited" value="V2luZG93cyAxMDtERVNLVE9QLUE4UEdOSEo7MjAyNC0xMC0xMDsiMDg6NTE6NTUgIjsxO20ubWFsYXZhc2k7TEFCLVNJUzItMTQ7MjAyNC0xMC0xMDsiMTA6Mzk6MTggIjtWbWF4IHRyYSBudW1lcmkuZnByZzs4MTgx"/>
+        <attribute name="edited" value="V2luZG93cyAxMDtERVNLVE9QLUE4UEdOSEo7MjAyNC0xMC0xMDsiMDk6MTQ6MTQgIjsxOzMyNDc="/>
+        <attribute name="edited" value="VkdpdDtERVNLVE9QLVZINERJMlA7MjAyNC0xMC0xMDsiMTE6Mzk6MTQgIjsxOzI3MzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Per N citt&#224; vengono registrate le temperature minime e massime di una giornata. Stampare alla fine il nome della citt&#224; pi&#249; fredda e di quella pi&#249; calda."/>
+            <declare name="temperaturaCitta, temperaturaMassima, temperaturaMinima" type="Integer" array="False" size=""/>
+            <declare name="citta, cittaCalda, cittaFredda" type="String" array="False" size=""/>
+            <assign variable="temperaturaMassima" expression="0"/>
+            <assign variable="temperaturaMinima" expression="99999999"/>
+            <assign variable="citta" expression="&quot;a&quot;"/>
+            <while expression="citta!=&quot;fine&quot;&amp;&amp;citta!=&quot;Fine&quot;&amp;&amp;citta!=&quot;FINE&quot;">
+                <output expression="&quot;inserire prima il nome delle diverse citt&#224;, poi la loro temperatura; scrivere FINE se si vuole terminare&quot;" newline="True"/>
+                <input variable="citta"/>
+                <if expression="citta!=&quot;fine&quot;&amp;&amp;citta!=&quot;Fine&quot;&amp;&amp;citta!=&quot;FINE&quot;">
+                    <then>
+                        <input variable="temperaturaCitta"/>
+                        <if expression="temperaturaCitta&gt;temperaturaMassima">
+                            <then>
+                                <assign variable="temperaturaMassima" expression="temperaturaCitta"/>
+                                <assign variable="cittaCalda" expression="citta"/>
+                            </then>
+                            <else>
+                                <assign variable="temperaturaMinima" expression="temperaturaCitta"/>
+                                <assign variable="cittaFredda" expression="citta"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <output expression="&quot;La temperatura pi&#249; alta registrata &#232; quella di &quot; &amp;cittaCalda &amp;&quot;, con &quot; &amp;temperaturaMassima &amp;&quot; gradi,&quot; &amp;&quot;mente la temperatura pi&#249; bassa registrata &#232; quella di &quot; &amp;cittaFredda &amp;&quot;, con &quot; &amp;temperaturaMinima &amp;&quot; gradi.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

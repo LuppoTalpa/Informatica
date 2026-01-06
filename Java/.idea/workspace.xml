@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75c95189-bb4d-4713-a75e-24e1bc0630e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../JavaFile/Rubrica_telefonica/HtmlMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Html_parser/HtmlValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Html_parser/HtmlValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Html_parser/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Html_parser/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="75c95189-bb4d-4713-a75e-24e1bc0630e0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,8 +142,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28539.13" />
-        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28539.13" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
       </set>
     </attachedChunks>
   </component>
@@ -192,6 +187,7 @@
       <workItem from="1765872178615" duration="4620000" />
       <workItem from="1765959089763" duration="2005000" />
       <workItem from="1766053477713" duration="31000" />
+      <workItem from="1766166641654" duration="65000" />
     </task>
     <servers />
   </component>

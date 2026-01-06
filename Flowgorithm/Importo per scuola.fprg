@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Esercizio-Importo per scuola"/>
+        <attribute name="authors" value="VGit"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-25 10:29:37 "/>
+        <attribute name="created" value="VkdpdDtERVNLVE9QLVZINERJMlA7MjAyNC0wOS0yNTsiMDk6NTY6MzIgIjsyNjQ2"/>
+        <attribute name="edited" value="VkdpdDtERVNLVE9QLVZINERJMlA7MjAyNC0wOS0yNTsiMTA6Mjk6MzcgIjsxOzI3NTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="media, importoVersare, quotaFissa, quota1, quota2, redditoFamiliare, sconto, totale" type="Real" array="False" size=""/>
+            <assign variable="sconto" expression="0.4"/>
+            <assign variable="quotaFissa" expression="18.00"/>
+            <assign variable="quota1" expression="25"/>
+            <assign variable="quota2" expression="17.50"/>
+            <output expression="&quot;Inserisci la tua media scolastica&quot;" newline="True"/>
+            <input variable="media"/>
+            <output expression="&quot;Inserisci il tuo reddito familiare&quot;" newline="True"/>
+            <input variable="redditoFamiliare"/>
+            <if expression="media &lt; 7">
+                <then>
+                    <assign variable="ImportoVersare" expression="quotaFissa+quota1"/>
+                </then>
+                <else>
+                    <if expression="media &gt;= 7 &amp;&amp; media &lt;= 8">
+                        <then>
+                            <assign variable="ImportoVersare" expression="quotaFissa+quota2"/>
+                        </then>
+                        <else>
+                            <assign variable="ImportoVersare" expression="quotaFissa"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="redditoFamiliare &lt;= 16000">
+                <then>
+                    <assign variable="totale" expression="ImportoVersare-(ImportoVersare*sconto)"/>
+                </then>
+                <else>
+                    <assign variable="totale" expression="ImportoVersare"/>
+                </else>
+            </if>
+            <output expression="&quot;La tua media &#232; di: &quot;&amp;media&amp;&quot; per cui l'importo che devi pagare in base anche al tuo reddito familiare corrisponde a: &quot;&amp;totale" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="[FGR10]Esercizio-sequenza numeri"/>
+        <attribute name="authors" value="VGit"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-09 10:21:59 "/>
+        <attribute name="created" value="VkdpdDtERVNLVE9QLVZINERJMlA7MjAyNC0xMC0wOTsiMTA6MDI6MzggIjsyNjI5"/>
+        <attribute name="edited" value="VkdpdDtERVNLVE9QLVZINERJMlA7MjAyNC0xMC0wOTsiMTA6MjE6NTkgIjsxOzI3NDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, numero, numeriPari, numeriDispari" type="Integer" array="False" size=""/>
+            <assign variable="numero" expression="0"/>
+            <assign variable="numeriPari" expression="0"/>
+            <assign variable="numeriDispari" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <while expression="numero != 9999">
+                <output expression="&quot;scrivi un numero&quot;" newline="True"/>
+                <input variable="numero"/>
+                <assign variable="i" expression="i+1"/>
+                <if expression="numero%2==0">
+                    <then>
+                        <assign variable="numeriPari" expression="numeriPari+1"/>
+                    </then>
+                    <else>
+                        <assign variable="numeriDispari" expression="numeriDispari+1"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;nella sequenza di &quot;&amp;i&amp;&quot; numeri ci sono &quot;&amp;numeriPari&amp;&quot; nuemri pari e &quot;&amp;numeriDispari&amp;&quot; numeri dispari.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
