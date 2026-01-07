@@ -1,5 +1,6 @@
 # Ignora tutto
 **/*
+out/*
 
 # Formati per Flowgorithm
 !**/*.fprg
