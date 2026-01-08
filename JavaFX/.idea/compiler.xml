@@ -6,7 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="JavaFX_2" />
         <module name="JavaFX5_SlotMachine" />
+        <module name="Rubrica_telefonica" />
+        <module name="JavaFX_for_beginners" />
+        <module name="JavaFX_4" />
+        <module name="JavaFX_3" />
       </profile>
     </annotationProcessing>
   </component>

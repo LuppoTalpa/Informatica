@@ -1,0 +1,64 @@
+/* --- MENU BAR --- */
+.menu-bar {
+    -fx-background-color: #16213e;
+    -fx-border-color: rgba(255, 215, 0, 0.3);
+    -fx-border-width: 0 0 1 0;
+}
+
+/* Colore del testo dei menu principali (File, Statistiche...) */
+.menu-bar .label {
+    -fx-text-fill: white;
+}
+
+/* Colore quando passi sopra col mouse ai menu principali */
+.menu-bar .menu-button:hover,
+.menu-bar .menu-button:focused,
+.menu-bar .menu-button:showing {
+    -fx-background-color: rgba(255, 215, 0, 0.2);
+}
+
+/* --- MENU A TENDINA (Context Menu) --- */
+.context-menu {
+    -fx-background-color: #1a1a2e;
+    -fx-border-color: #ffd700;
+    -fx-border-width: 1px;
+}
+
+/* Colore del testo dentro le tendine */
+.menu-item .label {
+    -fx-text-fill: white;
+}
+
+/* Colore quando passi sopra una voce del menu */
+.menu-item:focused {
+    -fx-background-color: rgba(255, 215, 0, 0.8);
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: #1a1a2e; /* Testo scuro su sfondo oro */
+}
+
+/* --- LIST VIEW --- */
+.list-view {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-background-radius: 5;
+}
+
+/* Le celle della lista */
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-padding: 5px;
+}
+
+/* Celle vuote (per non vederle bianche) */
+.list-cell:empty {
+    -fx-background-color: transparent;
+}
+
+/* Celle selezionate o hover */
+.list-cell:filled:selected,
+.list-cell:filled:hover {
+    -fx-background-color: rgba(255, 215, 0, 0.3);
+    -fx-text-fill: #ffd700;
+}
