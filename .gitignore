@@ -27,7 +27,7 @@
 !**/*.xml
 
 # JavaFX
-!JavaFX/**
+# !JavaFX/**
 
 # File geerici
 !LICENSE
