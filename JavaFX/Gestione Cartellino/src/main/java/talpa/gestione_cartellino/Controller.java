@@ -8,28 +8,26 @@ import javafx.scene.control.TextField;
 
 import java.util.ArrayList;
 
-public class HelloController {
+public class Controller {
 
     private AccessControll accessControll = new AccessControll();
 
     @FXML
     private TextField nome;
     @FXML
-    private Button ingresso;
-    @FXML
-    private Button uscita;
-    @FXML
     private ListView<String> presenti;
+    @FXML
+    private ListView<String> log;
 
     @FXML
     protected void onClickIngresso() {
-        accessControll.registraIngresso(nome.getText());
+        refreshLog(accessControll.registraIngresso(nome.getText()));
         refreshPresenti();
     }
 
     @FXML
     protected void onClickUscita() {
-        accessControll.registraUscita(nome.getText());
+        refreshLog(accessControll.registraUscita(nome.getText()));
         refreshPresenti();
     }
 
@@ -37,5 +35,9 @@ public class HelloController {
         ArrayList<String> p = accessControll.stampaPresenti();
         presenti.getItems().clear();
         p.forEach(s -> presenti.getItems().add(s));
+    }
+
+    private void refreshLog(String s) {
+        log.getItems().add(s);
     }
 }

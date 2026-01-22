@@ -11,7 +11,8 @@ public class TimeControll {
     }
 
     public static String uscita(String name, LocalDateTime ingresso) {
-        Duration d = Duration.between(ingresso, LocalDateTime.of(2026, 1, 20, 18, 30));
+//        Duration d = Duration.between(ingresso, LocalDateTime.of(2026, 1, 20, 18, 30));
+        Duration d = Duration.between(ingresso, LocalDateTime.now());
         return name + " è uscito. Tempo totale: " + d.toHoursPart() + "h " + d.toMinutesPart() + "m";
     }
 
