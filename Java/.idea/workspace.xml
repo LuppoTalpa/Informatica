@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75c95189-bb4d-4713-a75e-24e1bc0630e0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestione_cartellino/AccessControll.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_cartellino/AccessControll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestione_cartellino/TimeControll.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_cartellino/TimeControll.java" afterDir="false" />
-    </list>
+    <list default="true" id="75c95189-bb4d-4713-a75e-24e1bc0630e0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -195,6 +191,7 @@
       <workItem from="1772709734839" duration="21000" />
       <workItem from="1773217382821" duration="2239000" />
       <workItem from="1774001793863" duration="1203000" />
+      <workItem from="1774544724781" duration="221000" />
     </task>
     <servers />
   </component>

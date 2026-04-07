@@ -1,172 +1,156 @@
-# 📚 Esercizi di Informatica
+<div align="center">
 
-Raccolta completa degli **esercizi di informatica** svolti a scuola, organizzati per linguaggio e argomento.  
-Ogni file contiene codice pulito, commentato e testato.
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&width=600&lines=📚+Esercizi+di+Informatica;IIS+F.+Corni+%7C+Modena;Java+%7C+C%2B%2B+%7C+Python" alt="Typing SVG" />
+
+<br/>
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaFX](https://img.shields.io/badge/JavaFX-ED8B00?style=for-the-badge&logoColor=white)
+![Flowgorithm](https://img.shields.io/badge/Flowgorithm-4B0082?style=for-the-badge&logoColor=white)
+
+<br/>
+
+![Commits](https://img.shields.io/github/commit-activity/t/LuppoTalpa/Informatica?style=flat-square&color=6C63FF&label=Commits)
+![Last Commit](https://img.shields.io/github/last-commit/LuppoTalpa/Informatica?style=flat-square&color=6C63FF)
+![License](https://img.shields.io/github/license/LuppoTalpa/Informatica?style=flat-square&color=6C63FF)
+![Stars](https://img.shields.io/github/stars/LuppoTalpa/Informatica?style=flat-square&color=FFD700)
+
+</div>
+
+---
+
+> 🎓 Raccolta completa degli esercizi di informatica svolti durante il corso scolastico presso **IIS F. Corni, Modena**.  
+> Codice pulito, commentato in italiano e organizzato per linguaggio e argomento.
 
 ---
 
 ## 📂 Struttura della Repository
 
-| Cartella         | Descrizione                                                                             |
-| ---------------- | --------------------------------------------------------------------------------------- |
-| **C++**          | Esercizi base e avanzati in C++ (variabili, cicli, funzioni, array, struct, ricorsione) |
-| **Python**       | Script Python per algoritmi e automazioni                                               |
-| **Java**         | Programmi Java con focus su OOP, ArrayList, algoritmi                                   |
-| **JavaFX**       | Progetti GUI con JavaFX e Scene Builder                                                 |
-| **JavaFile**     | Gestione file e I/O in Java                                                             |
-| **Flowgorithm**  | Diagrammi di flusso e logica algoritmica                                                |
-| **Compiti-2025** | Compiti e verifiche dell'anno in corso                                                  |
-| **Librerie**     | Classi e librerie riutilizzabili                                                        |
+```
+Informatica/
+│
+├── 📁 Java/            → OOP, ArrayList, algoritmi
+├── 📁 JavaFX/          → GUI con JavaFX e Scene Builder
+├── 📁 JavaFile/        → Gestione file e I/O
+├── 📁 JavaDocs/        → Documentazione e Javadoc
+├── 📁 C++/             → Esercizi base e avanzati
+├── 📁 Python/          → Script e algoritmi
+├── 📁 Flowgorithm/     → Diagrammi di flusso
+├── 📁 Librerie/        → Classi e librerie riutilizzabili
+├── 📁 TTD/             → Test-Driven Development
+└── 📁 Compiti-2025/    → Compiti e verifiche
+```
 
 ---
 
-## 🛠️ Linguaggi e Tecnologie
+## 🧠 Argomenti Trattati
 
-![Flowgorithm](https://img.shields.io/badge/Flowgorithm-4B0082?style=flat&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
-![JavaFX](https://img.shields.io/badge/JavaFX-ED8B00?style=flat&logoColor=white)
-
-**Livello di competenza**
-
-| Avanzato    | Intermedio                  | Base   |
-| ----------- | --------------------------- | ------ |
-| Flowgorithm | Python, JavaFile, Java, C++ | JavaFX |
-
----
-
-## 📋 Argomenti Trattati
-
-### Fondamentali
+<details>
+<summary><b>🟢 Fondamentali</b></summary>
 
 - ✅ Input/Output
-- ✅ Condizioni (if, switch)
-- ✅ Cicli (for, while, do-while)
+- ✅ Condizioni (`if`, `switch`)
+- ✅ Cicli (`for`, `while`, `do-while`)
 - ✅ Funzioni e metodi
 - ✅ Array e Stringhe
 
-### Intermedi
+</details>
 
-- ✅ Strutture dati (struct, ArrayList)
+<details>
+<summary><b>🟡 Intermedi</b></summary>
+
+- ✅ Strutture dati (`struct`, `ArrayList`)
 - ✅ Ricorsione
 - ✅ Algoritmi di ordinamento e ricerca
 - ✅ Programmazione a oggetti (OOP)
 
-### Avanzati
+</details>
+
+<details>
+<summary><b>🔴 Avanzati</b></summary>
 
 - ✅ File I/O e gestione file
 - ✅ GUI con JavaFX
 - ✅ Algoritmi complessi
-- ✅ Design patterns
+- ✅ Design Patterns
+- ✅ Test-Driven Development (TTD)
+
+</details>
 
 ---
 
-## 🚀 Come Usare Questa Repository
+## 🚀 Come Eseguire
 
-### C++
-
+### ☕ Java
 ```bash
-# Compilare
-g++ -o programma file.cpp
-
-# Eseguire
-./programma
-```
-
-### Python
-
-```bash
-# Eseguire
-python file.py
-```
-
-### Java
-
-```bash
-# Compilare
-javac file.java
-
-# Eseguire
+javac NomeFile.java
 java NomeClasse
 ```
 
-### JavaFX (con Scene Builder)
-
-Apri il progetto in **IntelliJ IDEA** o **NetBeans** e esegui direttamente dall'IDE.
-
-**Consiglio**: Usa l'estensione **Code Runner** di VS Code per eseguire velocemente i file!
-
----
-
-## 📝 Organizzazione dei File
-
-Ogni file segue questo naming convention:
-
-- `NomeEsercizio.cpp` oppure `.py` oppure `.java`
-- Codice indentato e leggibile
-- Commenti chiari dove necessario
-- Header/docstring all'inizio del file
-
-Esempio:
-
-```
-C++/
-├── 01_VarCicli.cpp
-├── 02_Array.cpp
-├── 03_Funzioni.cpp
-└── ...
-
-Java/
-├── HelloWorld.java
-├── ArraysEsercizio.java
-├── OOP_Classi.java
-└── ...
+### ⚙️ C++
+```bash
+g++ -o programma file.cpp
+./programma
 ```
 
----
+### 🐍 Python
+```bash
+python file.py
+```
 
-## 🎯 Obiettivi Didattici
-
-✨ Migliorare la pratica di programmazione in più linguaggi  
-✨ Tenere traccia dei progressi durante l'anno scolastico  
-✨ Ripassare facilmente prima di verifiche e interrogazioni  
-✨ Avere una base di codice riutilizzabile per progetti futuri
+### 🖥️ JavaFX
+Apri il progetto in **IntelliJ IDEA** e premi ▶️ Run.  
+> Assicurati di avere **JavaFX SDK** configurato nelle dipendenze.
 
 ---
 
 ## ⚙️ Requisiti
 
-- **C++**: Compilatore GCC/Clang (MinGW su Windows)
-- **Python**: Interprete Python 3.8+
-- **Java**: JDK 11+ installato
-- **JavaFX**: Scene Builder (per progetti GUI)
-- **IDE Consigliato**: VS Code + estensioni oppure IntelliJ IDEA
+| Strumento | Versione minima |
+|-----------|----------------|
+| JDK | 11+ |
+| GCC / Clang | 9+ (MinGW su Windows) |
+| Python | 3.8+ |
+| Scene Builder | qualsiasi |
+| IDE | IntelliJ IDEA / VS Code |
 
 ---
 
-## 📖 Note Importanti
+## 📊 Linguaggi
 
-- ✔️ Tutti i file sono scritti e testati su **Linux/Windows**
-- ✔️ Ogni esercizio è **indipendente** e può essere eseguito singolarmente
-- ✔️ I commenti nel codice sono in **italiano**
-- ✔️ Alcuni esercizi sono **semplificati per chiarezza didattica**
-- 💡 Suggerimenti e miglioramenti sono sempre ben accetti!
+<div align="center">
+
+![Java](https://img.shields.io/badge/Java-66.7%25-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![C++](https://img.shields.io/badge/C++-31.0%25-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Python](https://img.shields.io/badge/Python-1.2%25-3776AB?style=flat-square&logo=python&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1.1%25-1572B6?style=flat-square&logo=css3&logoColor=white)
+
+</div>
+
+---
+
+## 📝 Note
+
+- 💬 Tutti i commenti nel codice sono in **italiano**
+- 🧪 Ogni esercizio è **indipendente** ed eseguibile singolarmente
+- 🖥️ Testato su **Windows e Linux**
+- 📚 Alcuni esercizi sono semplificati per scopi didattici
+- 💡 Suggerimenti e PR sono sempre ben accetti!
 
 ---
 
 ## 📜 Licenza
 
-Questa repository è distribuita con licenza **MIT**.  
-Puoi usare liberamente il codice per scopi didattici e personali.
+Distribuito con licenza **MIT** — libero uso per scopi didattici e personali.  
+Vedi il file [`LICENSE`](./LICENSE) per i dettagli.
 
 ---
 
-## 👤 Autore
+<div align="center">
 
-**LuppoTalpa** | IIS F. Corni, Modena  
-📧 Contatti disponibili nel profilo GitHub
+**Made with 💙 by [LuppoTalpa](https://github.com/LuppoTalpa)**  
+*IIS F. Corni — Modena, Italy*
 
----
-
-**Ultimo aggiornamento**: Gennaio 2026 | **Commits**: 125+
+</div>
