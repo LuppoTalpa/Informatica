@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&width=600&lines=📚+Esercizi+di+Informatica;IIS+F.+Corni+%7C+Modena;Java+%7C+C%2B%2B+%7C+Python" alt="Typing SVG" />
-
-<br/>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&width=600&lines=Esercizi+di+Informatica;IIS+F.+Corni+%7C+Modena;Java+%7C+C%2B%2B+%7C+Python" alt="Typing SVG" />
+</p>
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
@@ -84,37 +84,42 @@ Informatica/
 ## 🚀 Come Eseguire
 
 ### ☕ Java
+
 ```bash
 javac NomeFile.java
 java NomeClasse
 ```
 
 ### ⚙️ C++
+
 ```bash
 g++ -o programma file.cpp
 ./programma
 ```
 
 ### 🐍 Python
+
 ```bash
 python file.py
 ```
 
 ### 🖥️ JavaFX
-Apri il progetto in **IntelliJ IDEA** e premi ▶️ Run.  
+
+Apri il progetto in **IntelliJ IDEA** e premi ▶️ Run.
+
 > Assicurati di avere **JavaFX SDK** configurato nelle dipendenze.
 
 ---
 
 ## ⚙️ Requisiti
 
-| Strumento | Versione minima |
-|-----------|----------------|
-| JDK | 11+ |
-| GCC / Clang | 9+ (MinGW su Windows) |
-| Python | 3.8+ |
-| Scene Builder | qualsiasi |
-| IDE | IntelliJ IDEA / VS Code |
+| Strumento     | Versione minima         |
+| ------------- | ----------------------- |
+| JDK           | 11+                     |
+| GCC / Clang   | 9+ (MinGW su Windows)   |
+| Python        | 3.8+                    |
+| Scene Builder | qualsiasi               |
+| IDE           | IntelliJ IDEA / VS Code |
 
 ---
 
@@ -151,6 +156,6 @@ Vedi il file [`LICENSE`](./LICENSE) per i dettagli.
 <div align="center">
 
 **Made with 💙 by [LuppoTalpa](https://github.com/LuppoTalpa)**  
-*IIS F. Corni — Modena, Italy*
+_IIS F. Corni — Modena, Italy_
 
 </div>
